@@ -1,0 +1,73 @@
+﻿@model Candidate
+
+<div class="display-6">
+    Apply
+</div>
+<form method="post" action="/course/apply">
+    <div class="form-group">
+        <div class="form-group my-2">
+            <label>Email </label>
+            <input name="Email" class="form-control" />
+        </div>
+        <div class="form-group my-2">   
+        <label>First Name</label>
+        <input name="FirstName" class="form-control my-2" />
+        </div>
+        <div class="form-group my-2">
+
+            <label>Middle Name </label>
+        <input name="MiddleName" class="form-control my-2" />
+        </div>
+        <div class="form-group my-2">
+
+            <label>Last Name </label>
+            <input name="LastName" class="form-control my-2" />
+        </div>
+        <div class="form-group my-2">
+
+        <label>Age</label>
+            <select class="form-control my-2">
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
+        </select>
+        </div>
+
+        <fieldset>
+            <legend>
+                Select a course
+            </legend>
+            <p>
+                <input id="mvc" type="radio" name="SelectedCourse" value="ASP .NET Core MVC" />
+                <label>ASP .NET Core MVC</label>
+            </p>
+            <p>
+
+                <input id="api" type="radio" name="SelectedCourse" value="ASP .NET Core API" />
+                <label>ASP .NET Core API</label>
+            </p>
+            <p>
+
+                <input id="blazore" type="radio" name="SelectedCourse" value="Blazore" />
+                <label>Blazore</label>
+            </p>
+
+        </fieldset>
+
+        <div>
+            <button type="submit" class="btn btn-primary">
+                Apply
+            </button>
+            <a href="/">
+                <button type="button" class="btn btn-warning">
+                    Home
+                </button>
+            </a>
+
+        </div>
+    </div>
+   
+</form>
